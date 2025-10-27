@@ -9,8 +9,8 @@ def test_open_product_details_ios(driver):
 
     # Open catalog and click product
     product_page = ProductPage(driver)
-    product_page.open_product()  # Uses iOS XPath to tap product
+    product_page.open_product()  
 
     # Verify product name on details page
-    name = product_page.verify_product_name()  # Uses iOS XPath to get product text
+    name = product_page.verify_product_name()
     assert name == "Sauce Labs Backpack", f"Expected 'Sauce Labs Backpack', got '{name}'"
